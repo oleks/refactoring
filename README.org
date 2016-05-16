@@ -1,5 +1,6 @@
 #+TITLE: Refactoring — Software Development 2016
 
-[Lecture slides](slides/output/su16-refactoring.pdf) and [source code](src)
-from the lecture on Refactoring given for [Software Development
-2016](http://www.webcitation.org/6eJN9ZMzG) at [DIKU](http://www.diku.dk/).
+[[slides/output/su16-refactoring.pdf][Lecture slides]] and [[src][source code]]
+from the lecture on Refactoring given for
+[[http://www.webcitation.org/6eJN9ZMzG][Software Development 2016]] at
+[[http://www.diku.dk/][DIKU]].
