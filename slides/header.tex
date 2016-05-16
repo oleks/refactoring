@@ -107,3 +107,9 @@
   --- #1%
   \end{flushright}%
 }
+
+\newcommand{\beamercheckmark}{} % make sure it does not yet exist 
+\let\beamercheckmark\checkmark  % save its contents in this command 
+\let\checkmark\relax            % make \checkmark look undefined 
+
+\usepackage{dingbat}
