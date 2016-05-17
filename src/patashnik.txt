@@ -1,8 +1,10 @@
 # Practical Part: 0/50
-## P1: 25/25
-+ Excellent!
+## P1: 0/25
+* Points for trying.
+### a: 0.5/10
+### b: 0.5/15
 
-## P1: 10/25
-? Kind of works.
-- Silly indentation.
-- Bad names.
+## P2: 0/25
++ Excellent!
+### a: 10/10
+### b: 15/15

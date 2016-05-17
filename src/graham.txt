@@ -1,8 +1,12 @@
 # Practical Part: 0/50
-## P1: 0.5/25
-+ Points for trying.
+## P1: 0/25
+* Okayish.
+- Methods are way too long.
+### a: 5/10
+### b: 5/15
 
-## P1: 10/25
-+ Again, points for trying.
-- Nothing works.
-+ Nice style in however little there is.
+## P2: 0/25
++ Methods are shorter! (Weird?)
++ It works!
+### a: 10/10
+### b: 10/15
