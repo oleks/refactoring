@@ -41,4 +41,6 @@ Here are some motivational, additional requirements:
 2. Allow arbitrarily deep point hierarchies.
 3. Make ~account.py~ give a warning if the points given at some depth do not
    correspond to the cumulative sum of sub-points, and the points given are
-   neither ~0~, nor the empty string (NaN).
+   neither ~0~, nor the empty string (NaN). (This can happen if the TA thought
+   that a solution to a major task is more, or less, than the sum of its
+   parts. This sort of thinking is not allowed.)
