@@ -113,3 +113,15 @@
 \let\checkmark\relax            % make \checkmark look undefined 
 
 \usepackage{dingbat}
+
+\lstdefinestyle{Python}{
+  language=python,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\bfseries,
+  columns=fullflexible,
+  keepspaces=true,
+  keywords={while,and},
+  morekeywords={size_t},
+}
+\lstset{style=Python}
+

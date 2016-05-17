@@ -1,0 +1,60 @@
+\begin{frame}[fragile]
+
+\frametitle{Name Your Conditions}
+
+\begin{center}
+
+Avoid long and-or combinations in if statements.
+
+\end{center}
+
+\vspace{\fill}
+
+\begin{center}
+
+\leftthumbsup~Name your conditions.~\rightthumbsup
+
+\end{center}
+
+\begin{columns}[t]
+
+\begin{column}{0.5\textwidth}
+
+\setlength{\topsep}{0pt}
+
+\begin{center}
+
+\textbf{Bad}
+
+\begin{lstlisting}
+while time >= LECTURE_START and
+    time <= LECTURE_END:
+  sleep()
+\end{lstlisting}
+
+\end{center}
+
+\end{column}
+
+\begin{column}{0.5\textwidth}
+
+\setlength{\topsep}{0pt}
+
+\begin{center}
+
+\textbf{Good}
+
+\end{center}
+
+\begin{lstlisting}
+while lecture(time):
+  sleep()
+\end{lstlisting}
+
+\end{column}
+
+\end{columns}
+
+\vspace{\fill}
+
+\end{frame}
