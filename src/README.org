@@ -27,8 +27,8 @@ The TAs were handed a template like this for every student:
 They can add anything in between those lines, but the "point lines" should
 follow this format. That is, start with a sequence of ~#~, indicating an
 indentation level, followed by some text until a ~:~, followed by some points.
-The points can beither an integer or decimal (e.g., ~0.5~) out of some integer
-maximum, or a ~+~ followed by an arbitrary integer or decimal value.
+The points can be either an integer or decimal (e.g., ~0.5~) out of some
+integer maximum, or a ~+~ followed by an arbitrary integer or decimal value.
 
 ~account.py~ accomplishes this task, but requires some major refactoring. Your
 task is to perform this refactoring. In particular, you should refactor the
@@ -40,5 +40,5 @@ Here are some motivational, additional requirements:
    but the grand total.
 2. Allow arbitrarily deep point hierarchies.
 3. Make ~account.py~ give a warning if the points given at some depth do not
-   correspond to the cumulative sum of subpoints, and the points given are
+   correspond to the cumulative sum of sub-points, and the points given are
    neither ~0~, nor the empty string (NaN).
