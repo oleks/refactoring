@@ -1,0 +1,8 @@
+# Practical Part: 0/50
+## P1: 5/25
+? This kind of works.
+- Report is terrible.
+
+## P1: 24/25
++ Suprisingly excellent.
+- But could refactor some

@@ -1,0 +1,8 @@
+# Practical Part: 0/50
+## P1: 25/25
++ Excellent!
+
+## P1: 10/25
+? Kind of works.
+- Silly indentation.
+- Bad names.
