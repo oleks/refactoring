@@ -4,3 +4,5 @@
 from the lecture on Refactoring given for
 [[http://www.webcitation.org/6eJN9ZMzG][Software Development 2016]] at
 [[http://www.diku.dk/][DIKU]].
+
+There is also a practical refactoring exercise under [[src][src]].
