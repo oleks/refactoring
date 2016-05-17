@@ -36,8 +36,8 @@ lengthy ~parse~ method. Hint: Use a recursive ~Points~ class.
 
 Here are some motivational, additional requirements:
 
-1. Make it easy to change ~account.py~ to print not the total for P1 and P2,
-   but the grand total.
+1. Make it easy to change ~account.py~ to print not the cumulative sum for each
+   major task, but the grand total.
 2. Allow arbitrarily deep point hierarchies.
 3. Make ~account.py~ give a warning if the points given at some depth do not
    correspond to the cumulative sum of sub-points, and the points given are
