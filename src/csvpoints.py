@@ -3,7 +3,7 @@
 import sys, re, os.path
 
 POINTLINE = re.compile(
-  r"^(#+) +(?P<text>.*): +(?P<points>\+?(\d+(\.\d+)?)?)(/(?P<total>\d+))?\s*$",
+  r"^(#+) (?P<text>.*): (?P<points>\+?(\d+(\.\d+)?)?)(/(?P<total>\d+))?$",
   re.MULTILINE)
 
 def tofloat(string, default):
@@ -24,14 +24,14 @@ def parse(filepath):
     nonlocal cumsum
     nonlocal curdepth
     nonlocal summary
-    print(" " * curdepth, "Cumsum:", cumsum[curdepth])
+#    print(" " * curdepth, "Cumsum:", cumsum[curdepth])
     while depth < curdepth:
       if curdepth == 3:
         summary.append(cumsum[curdepth])
       cumsum[curdepth - 1] += cumsum[curdepth]
       del(cumsum[curdepth])
       curdepth -= 1
-      print(" " * curdepth, "Cumsum:", cumsum[curdepth])
+#      print(" " * curdepth, "Cumsum:", cumsum[curdepth])
 
   def account(depth, points, text = None):
     nonlocal cumsum
@@ -50,6 +50,7 @@ def parse(filepath):
         cumsum[depth] += points
       else:
         cumsum[depth] = points
+    print(cumsum)
 
   for match in POINTLINE.finditer(contents):
     depth = len(match.group(1))
@@ -58,7 +59,7 @@ def parse(filepath):
     total = tofloat(match.group("total"), float('inf'))
 
     account(depth, points, text)
-    print(" " * depth, text, points, total)
+    print(depth, text, points, total)
 
   sumtodepth(1)
   return summary
