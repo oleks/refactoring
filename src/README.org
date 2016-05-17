@@ -5,12 +5,10 @@
 might use to judge the quality of your assignments and take-home exams. These
 files are filled out by teaching assistants (TAs).
 
-TAs are good at giving points for each task and finding things which are good
-or bad about a solution to a task, but they are not very good at adding points.
-This is where ~account.py~ comes into play.
-
-~account.py~ takes a ~.txt~ file as an argument and produces a cumulative sum
-for each major task.
+TAs are good at giving points for each task, and spotting what is good and what
+is bad about a solution, but they are not very good at adding points.  This is
+where ~account.py~ comes into play: ~account.py~ takes a ~.txt~ file as a
+command-line argument and produces a cumulative sum for each major task.
 
 The TAs were handed a template like this for every student:
 
@@ -35,3 +33,12 @@ maximum, or a ~+~ followed by an arbitrary integer or decimal value.
 ~account.py~ accomplishes this task, but requires some major refactoring. Your
 task is to perform this refactoring. In particular, you should refactor the
 lengthy ~parse~ method. Hint: Use a recursive ~Points~ class.
+
+Here are some motivational, additional requirements:
+
+1. Make it easy to change ~account.py~ to print not the total for P1 and P2,
+   but the grand total.
+2. Allow arbitrarily deep point hierarchies.
+3. Make ~account.py~ give a warning if the points given at some depth do not
+   correspond to the cumulative sum of subpoints, and the points given are
+   neither ~0~, nor the empty string (NaN).
