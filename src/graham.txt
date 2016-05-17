@@ -1,9 +1,10 @@
 # Practical Part: 0/50
-## P1: 0/25
+## P1: /25
 * Okayish.
 - Methods are way too long.
 ### a: 5/10
 ### b: 5/15
+### Bonus: +40
 
 ## P2: 0/25
 + Methods are shorter! (Weird?)
