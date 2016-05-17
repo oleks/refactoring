@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import sys, re, os.path
+import sys, re
 
 POINTLINE = re.compile(
   r"^(#+) (?P<text>.*): (?P<points>\+?(\d+(\.\d+)?)?)(/(?P<total>\d+))?$",
@@ -18,7 +18,7 @@ def parse(filepath):
 
   cumsum = {}
   curdepth = 0
-  summary = [os.path.basename(filepath[:-4])]
+  summary = []
 
   def sumtodepth(depth):
     nonlocal cumsum

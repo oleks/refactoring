@@ -1,0 +1,37 @@
+#+TITLE: Refactoring Exercise
+
+~account.py~ is a simple script that can read "comment files", such as
+~knuth.txt~, ~graham.txt~, and ~patashnik.txt~. These files resemble what we
+might use to judge the quality of your assignments and take-home exams. These
+files are filled out by teaching assistants (TAs).
+
+TAs are good at giving points for each task and finding things which are good
+or bad about a solution to a task, but they are not very good at adding points.
+This is where ~account.py~ comes into play.
+
+~account.py~ takes a ~.txt~ file as an argument and produces a cumulative sum
+for each major task.
+
+The TAs were handed a template like this for every student:
+
+#+BEGIN_SRC
+# Practical Part: 0/50
+## P1: 0/25
+### a: 0/10
+### b: 0/15
+### Bonus: +0
+## P2: 0/25
+### a: 0/10
+### b: 0/15
+### Bonus: +0
+#+END_SRC
+
+They can add anything in between those lines, but the "point lines" should
+follow this format. That is, start with a sequence of ~#~, indicating an
+indentation level, followed by some text until a ~:~, followed by some points.
+The points can beither an integer or decimal (e.g., ~0.5~) out of some integer
+maximum, or a ~+~ followed by an arbitrary integer or decimal value.
+
+~account.py~ accomplishes this task, but requires some major refactoring. Your
+task is to perform this refactoring. In particular, you should refactor the
+lengthy ~parse~ method. Hint: Use a recursive ~Points~ class.
