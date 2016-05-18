@@ -12,5 +12,5 @@ There is also a practical refactoring exercise under [[src][src]].
 [[http://i.creativecommons.org/p/zero/1.0/88x31.png]]
 
 To the extent possible under law, I waive all copyright and related or
-neighboring rights to Refactoring — Software Development 2016. This work is
-published from: Denmark.
+neighboring rights to [[https://github.com/oleks/refactoring][Refactoring —
+Software Development 2016]]. This work is published from: Denmark.
